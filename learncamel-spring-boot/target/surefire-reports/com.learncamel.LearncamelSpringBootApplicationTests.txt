@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.learncamel.LearncamelSpringBootApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 7.626 s <<< FAILURE! - in com.learncamel.LearncamelSpringBootApplicationTests
+contextLoads  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.apache.camel.FailedToCreateRouteException: Failed to create route route1: Route(route1)[From[{{startRoutee}}] -> [Log[Timer invoked NO... because of Failed to resolve endpoint: timer://hello%20how%20are%20you?periods=10s due to: Failed to resolve endpoint: timer://hello%20how%20are%20you?periods=10s due to: There are 1 parameters that couldn't be set on the endpoint. Check the uri if the parameters are spelt correctly and that they are properties of the endpoint. Unknown parameters=[{periods=10s}]
+Caused by: org.apache.camel.ResolveEndpointFailedException: Failed to resolve endpoint: timer://hello%20how%20are%20you?periods=10s due to: Failed to resolve endpoint: timer://hello%20how%20are%20you?periods=10s due to: There are 1 parameters that couldn't be set on the endpoint. Check the uri if the parameters are spelt correctly and that they are properties of the endpoint. Unknown parameters=[{periods=10s}]
+Caused by: org.apache.camel.ResolveEndpointFailedException: Failed to resolve endpoint: timer://hello%20how%20are%20you?periods=10s due to: There are 1 parameters that couldn't be set on the endpoint. Check the uri if the parameters are spelt correctly and that they are properties of the endpoint. Unknown parameters=[{periods=10s}]
+
